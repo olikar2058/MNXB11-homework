@@ -1,0 +1,449 @@
+Only in /home/olikar: ”
+Only in /home/olikar: accountsservice
+Only in /home/olikar: adjtime
+Only in /home/olikar: aliases
+Only in /home/olikar: aliases.db
+Only in /home/olikar: alsa
+Only in /home/olikar: alternatives
+Only in /home/olikar: anacrontab
+Only in /home/olikar: appstream.conf
+Only in /home/olikar: .apptainer
+Only in /home/olikar: apptainer
+Only in /home/olikar: asciidoc
+Only in /home/olikar: asound.conf
+Only in /home/olikar: at.deny
+Only in /home/olikar: audit
+Only in /home/olikar: authselect
+Only in /home/olikar: auto.cvmfs
+Only in /home/olikar: autofs.conf
+Only in /home/olikar: auto.master
+Only in /home/olikar: auto.master.d
+Only in /home/olikar: auto.misc
+Only in /home/olikar: auto.net
+Only in /home/olikar: auto.smb
+Only in /home/olikar: avahi
+Only in /home/olikar: bash_completion.d
+Only in /home/olikar: .bash_history
+diff -y /etc/skel/.bash_logout /home/olikar/.bash_logout
+# ~/.bash_logout						# ~/.bash_logout
+
+Only in /home/olikar: .bash_logout~
+diff -y /etc/skel/.bash_profile /home/olikar/.bash_profile
+# .bash_profile							# .bash_profile
+
+# Get the aliases and functions					# Get the aliases and functions
+if [ -f ~/.bashrc ]; then					if [ -f ~/.bashrc ]; then
+	. ~/.bashrc							. ~/.bashrc
+fi								fi
+
+# User specific environment and startup programs		# User specific environment and startup programs
+Only in /home/olikar: .bash_profile~
+diff -y /etc/skel/.bashrc /home/olikar/.bashrc
+# .bashrc							# .bashrc
+
+# Source global definitions					# Source global definitions
+if [ -f /etc/bashrc ]; then					if [ -f /etc/bashrc ]; then
+	. /etc/bashrc							. /etc/bashrc
+fi								fi
+
+# User specific environment					# User specific environment
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]		if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
+then								then
+    PATH="$HOME/.local/bin:$HOME/bin:$PATH"			    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+fi								fi
+export PATH						      |	export PATH=$PATH:/projects/hep/fs10/mnxb11/bin
+
+# Uncomment the following line if you don't like systemctl's 	# Uncomment the following line if you don't like systemctl's 
+# export SYSTEMD_PAGER=						# export SYSTEMD_PAGER=
+
+# User specific aliases and functions				# User specific aliases and functions
+if [ -d ~/.bashrc.d ]; then					if [ -d ~/.bashrc.d ]; then
+	for rc in ~/.bashrc.d/*; do					for rc in ~/.bashrc.d/*; do
+		if [ -f "$rc" ]; then						if [ -f "$rc" ]; then
+			. "$rc"								. "$rc"
+		fi								fi
+	done								done
+fi								fi
+
+unset rc							unset rc
+Only in /home/olikar: .bashrc~
+Only in /home/olikar: bashrc
+Only in /home/olikar: bindresvport.blacklist
+Only in /home/olikar: binfmt.d
+Only in /home/olikar: bluetooth
+Only in /home/olikar: brltty
+Only in /home/olikar: brltty.conf
+Only in /home/olikar: .cache
+Only in /home/olikar: certmonger
+Only in /home/olikar: chromium
+Only in /home/olikar: chrony.conf
+Only in /home/olikar: chrony.conf.rpmnew
+Only in /home/olikar: cifs-utils
+Only in /home/olikar: cni
+Only in /home/olikar: cockpit
+Only in /home/olikar: .config
+Only in /home/olikar: containers
+Only in /home/olikar: cron.d
+Only in /home/olikar: cron.daily
+Only in /home/olikar: cron.deny
+Only in /home/olikar: cron.hourly
+Only in /home/olikar: cron.monthly
+Only in /home/olikar: crontab
+Only in /home/olikar: cron.weekly
+Only in /home/olikar: crypto-policies
+Only in /home/olikar: csh.cshrc
+Only in /home/olikar: csh.login
+Only in /home/olikar: cups
+Only in /home/olikar: cupshelpers
+Only in /home/olikar: cvmfs
+Only in /home/olikar: dbus-1
+Only in /home/olikar: dconf
+Only in /home/olikar: debuginfod
+Only in /home/olikar: default
+Only in /home/olikar: depmod.d
+Only in /home/olikar: Desktop
+Only in /home/olikar: dhcp
+Only in /home/olikar: DIR_COLORS
+Only in /home/olikar: DIR_COLORS.lightbgcolor
+Only in /home/olikar: dnf
+Only in /home/olikar: dnsmasq.conf
+Only in /home/olikar: dnsmasq.d
+Only in /home/olikar: Documents
+Only in /home/olikar: Downloads
+Only in /home/olikar: dracut.conf
+Only in /home/olikar: dracut.conf.d
+Only in /home/olikar: egl
+diff -y /etc/skel/.emacs /home/olikar/.emacs
+;; .emacs							;; .emacs
+
+(custom-set-variables						(custom-set-variables
+ ;; uncomment to always end a file with a newline		 ;; uncomment to always end a file with a newline
+ ;'(require-final-newline t)					 ;'(require-final-newline t)
+ ;; uncomment to disable loading of "default.el" at startup	 ;; uncomment to disable loading of "default.el" at startup
+ ;'(inhibit-default-init t)					 ;'(inhibit-default-init t)
+ ;; default to unified diffs					 ;; default to unified diffs
+ '(diff-switches "-u"))						 '(diff-switches "-u"))
+
+;;; uncomment for CJK utf-8 support for non-Asian users		;;; uncomment for CJK utf-8 support for non-Asian users
+;; (require 'un-define)						;; (require 'un-define)
+Only in /home/olikar: .emacs~
+Only in /home/olikar: enscript.cfg
+Only in /home/olikar: environment
+Only in /home/olikar: environment-modules
+Only in /home/olikar: ethertypes
+Only in /home/olikar: exports
+Only in /home/olikar: exports.d
+Only in /home/olikar: fail2ban
+Only in /home/olikar: favicon.png
+Only in /home/olikar: fcoe
+Only in /home/olikar: filesystems
+Only in /home/olikar: firefox
+Only in /home/olikar: firewalld
+Only in /home/olikar: flatpak
+Only in /home/olikar: fonts
+Only in /home/olikar: foomatic
+Only in /home/olikar: fprintd.conf
+Only in /home/olikar: fstab
+Only in /home/olikar: fuse.conf
+Only in /home/olikar: fwupd
+Only in /home/olikar: gcrypt
+Only in /home/olikar: gdbinit
+Only in /home/olikar: gdbinit.d
+Only in /home/olikar: gdm
+Only in /home/olikar: geoclue
+Only in /home/olikar: git
+Only in /home/olikar: .gitconfig
+Only in /home/olikar: glvnd
+Only in /home/olikar: gnupg
+Only in /home/olikar: gpfs
+Only in /home/olikar: grafana
+Only in /home/olikar: GREP_COLORS
+Only in /home/olikar: groff
+Only in /home/olikar: group
+Only in /home/olikar: group-
+Only in /home/olikar: grub2.cfg
+Only in /home/olikar: grub2-efi.cfg
+Only in /home/olikar: grub.d
+Only in /home/olikar: gss
+Only in /home/olikar: gssproxy
+Only in /home/olikar: host.conf
+Only in /home/olikar: hostname
+Only in /home/olikar: hosts
+Only in /home/olikar: hosts.org
+Only in /home/olikar: hp
+Only in /home/olikar: ibutils2
+Only in /home/olikar: idmapd.conf
+Only in /home/olikar: infiniband
+Only in /home/olikar: infiniband-diags
+Only in /home/olikar: init.d
+Only in /home/olikar: inittab
+Only in /home/olikar: inputrc
+Only in /home/olikar: ipa
+Only in /home/olikar: iproute2
+Only in /home/olikar: ipsec.conf
+Only in /home/olikar: ipsec.d
+Only in /home/olikar: iscsi
+Only in /home/olikar: issue
+Only in /home/olikar: issue.d
+Only in /home/olikar: issue.net
+Only in /home/olikar: iwpmd.conf
+Only in /home/olikar: .java
+Only in /home/olikar: java
+Only in /home/olikar: jvm
+Only in /home/olikar: jvm-common
+Only in /home/olikar: kdump
+Only in /home/olikar: kdump.conf
+Only in /home/olikar: kernel
+Only in /home/olikar: keyutils
+Only in /home/olikar: krb5.conf
+Only in /home/olikar: krb5.conf.d
+Only in /home/olikar: krb5.conf.ipabkp
+diff -y /etc/skel/.kshrc /home/olikar/.kshrc
+# .kshrc							# .kshrc
+
+# Source global definitions					# Source global definitions
+if [ -f /etc/kshrc ]; then					if [ -f /etc/kshrc ]; then
+	. /etc/kshrc							. /etc/kshrc
+fi								fi
+
+# use emacs editing mode by default				# use emacs editing mode by default
+set -o emacs							set -o emacs
+
+# User specific aliases and functions				# User specific aliases and functions
+
+Only in /home/olikar: .kshrc~
+Only in /home/olikar: kshrc
+Only in /home/olikar: ld.so.cache
+Only in /home/olikar: ld.so.conf
+Only in /home/olikar: ld.so.conf.d
+Only in /home/olikar: .lesshst
+Only in /home/olikar: libblockdev
+Only in /home/olikar: libibverbs.d
+Only in /home/olikar: libnl
+Only in /home/olikar: libpaper.d
+Only in /home/olikar: libreport
+Only in /home/olikar: libssh
+Only in /home/olikar: libuser.conf
+Only in /home/olikar: libvirt
+Only in /home/olikar: lldpd.d
+Only in /home/olikar: .local
+Only in /home/olikar: locale.conf
+Only in /home/olikar: localtime
+Only in /home/olikar: login.defs
+Only in /home/olikar: logrotate.conf
+Only in /home/olikar: logrotate.d
+Only in /home/olikar: lsb-release.d
+Only in /home/olikar: lsm
+Only in /home/olikar: luarocks
+Only in /home/olikar: lvm
+Only in /home/olikar: machine-id
+Only in /home/olikar: magic
+Only in /home/olikar: mailcap
+Only in /home/olikar: makedumpfile.conf.sample
+Only in /home/olikar: man_db.conf
+Only in /home/olikar: mc
+Only in /home/olikar: mcelog
+Only in /home/olikar: mft
+Only in /home/olikar: microcode_ctl
+Only in /home/olikar: mime.types
+Only in /home/olikar: mke2fs.conf
+Only in /home/olikar: modprobe.d
+Only in /home/olikar: modulefiles
+Only in /home/olikar: modules-load.d
+Only in /home/olikar: motd
+Only in /home/olikar: motd.d
+Common subdirectories: /etc/skel/.mozilla and /home/olikar/.mozilla
+Only in /home/olikar: mtab
+Only in /home/olikar: multipath
+Only in /home/olikar: munge
+Only in /home/olikar: Music
+Only in /home/olikar: my.cnf
+Only in /home/olikar: my.cnf.d
+Only in /home/olikar: myfirstfile.txt
+Only in /home/olikar: nanorc
+Only in /home/olikar: netconfig
+Only in /home/olikar: NetworkManager
+Only in /home/olikar: networks
+Only in /home/olikar: nfs.conf
+Only in /home/olikar: nfsmount.conf
+Only in /home/olikar: nftables
+Only in /home/olikar: nsswitch.conf
+Only in /home/olikar: nsswitch.conf.bak
+Only in /home/olikar: nvme
+Only in /home/olikar: odbc.ini
+Only in /home/olikar: odbcinst.ini
+Only in /home/olikar: oddjob
+Only in /home/olikar: oddjobd.conf
+Only in /home/olikar: oddjobd.conf.d
+Only in /home/olikar: oliver_karlsson_homework3.tgz
+Only in /home/olikar: openal
+Only in /home/olikar: openldap
+Only in /home/olikar: opensm
+Only in /home/olikar: opt
+Only in /home/olikar: os-release
+Only in /home/olikar: ostree
+Only in /home/olikar: PackageKit
+Only in /home/olikar: pam.d
+Only in /home/olikar: pam_radius.conf
+Only in /home/olikar: pam_radius.conf.1552457.2023-04-27@15:43:17~
+Only in /home/olikar: papersize
+Only in /home/olikar: passwd
+Only in /home/olikar: passwd-
+Only in /home/olikar: passwdaliases
+Only in /home/olikar: pbm2ppa.conf
+Only in /home/olikar: pcp
+Only in /home/olikar: pcp.conf
+Only in /home/olikar: pcp.env
+Only in /home/olikar: pesign
+Only in /home/olikar: Pictures
+Only in /home/olikar: pinforc
+Only in /home/olikar: pkcs11
+Only in /home/olikar: pkgconfig
+Only in /home/olikar: .pki
+Only in /home/olikar: pki
+Only in /home/olikar: plymouth
+Only in /home/olikar: pm
+Only in /home/olikar: pmix
+Only in /home/olikar: pnm2ppa.conf
+Only in /home/olikar: polkit-1
+Only in /home/olikar: popt.d
+Only in /home/olikar: postfix
+Only in /home/olikar: printcap
+Only in /home/olikar: profile
+Only in /home/olikar: profile.d
+Only in /home/olikar: protocols
+Only in /home/olikar: Public
+Only in /home/olikar: pulse
+Only in /home/olikar: qemu-ga
+Only in /home/olikar: ras
+Only in /home/olikar: rc.d
+Only in /home/olikar: rc.local
+Only in /home/olikar: rdma
+Only in /home/olikar: redhat-lsb
+Only in /home/olikar: redhat-release
+Only in /home/olikar: request-key.conf
+Only in /home/olikar: request-key.d
+Only in /home/olikar: resolv.conf
+Only in /home/olikar: rocky-release
+Only in /home/olikar: rocky-release-upstream
+Only in /home/olikar: rpc
+Only in /home/olikar: rpm
+Only in /home/olikar: rpmdevtools
+Only in /home/olikar: rshim.conf
+Only in /home/olikar: rsyncd.conf
+Only in /home/olikar: rsyslog.conf
+Only in /home/olikar: rsyslog.conf.rpmnew
+Only in /home/olikar: rsyslog.d
+Only in /home/olikar: rwtab.d
+Only in /home/olikar: samba
+Only in /home/olikar: sane.d
+Only in /home/olikar: sasl2
+Only in /home/olikar: scl
+Only in /home/olikar: screenrc
+Only in /home/olikar: security
+Only in /home/olikar: selinux
+Only in /home/olikar: sensors3.conf
+Only in /home/olikar: sensors.d
+Only in /home/olikar: services
+Only in /home/olikar: sestatus.conf
+Only in /home/olikar: setroubleshoot
+Only in /home/olikar: sgml
+Only in /home/olikar: shells
+Only in /home/olikar: slurm
+Only in /home/olikar: smartmontools
+Only in /home/olikar: s-nail.rc
+Only in /home/olikar: sos
+Only in /home/olikar: speech-dispatcher
+Only in /home/olikar: srp_daemon.conf
+Only in /home/olikar: .ssh
+Only in /home/olikar: ssh
+Only in /home/olikar: ssl
+Only in /home/olikar: sssd
+Only in /home/olikar: statetab.d
+Only in /home/olikar: subgid
+Only in /home/olikar: subuid
+Only in /home/olikar: subversion
+Only in /home/olikar: sudoers.d
+Only in /home/olikar: sysconfig
+Only in /home/olikar: sysctl.conf
+Only in /home/olikar: sysctl.d
+Only in /home/olikar: systemd
+Only in /home/olikar: system-release
+Only in /home/olikar: system-release-cpe
+Only in /home/olikar: target
+Only in /home/olikar: td-agent
+Only in /home/olikar: Templates
+Only in /home/olikar: terminfo
+Only in /home/olikar: tmpfiles.d
+Only in /home/olikar: TOP-MNXB11
+Only in /home/olikar: tpm2-tss
+Only in /home/olikar: trusted-key.key
+Only in /home/olikar: tuned
+Only in /home/olikar: ucx
+Only in /home/olikar: udev
+Only in /home/olikar: udisks2
+Only in /home/olikar: unbound
+Only in /home/olikar: .updated
+Only in /home/olikar: updatedb.conf
+Only in /home/olikar: UPower
+Only in /home/olikar: usb_modeswitch.conf
+Only in /home/olikar: vconsole.conf
+Only in /home/olikar: vdpau_wrapper.cfg
+Only in /home/olikar: Videos
+Only in /home/olikar: vimrc
+Only in /home/olikar: virc
+Only in /home/olikar: vmware-tools
+Only in /home/olikar: .vscode
+Only in /home/olikar: vulkan
+Only in /home/olikar: wgetrc
+Only in /home/olikar: wireplumber
+Only in /home/olikar: wpa_supplicant
+Only in /home/olikar: X11
+Only in /home/olikar: xattr.conf
+Only in /home/olikar: xdg
+Only in /home/olikar: xml
+Only in /home/olikar: yum
+Only in /home/olikar: yum.conf
+Only in /home/olikar: yum.repos.d
+Only in /home/olikar: zabbix
+Only in /home/olikar: zlogin
+Only in /home/olikar: zlogout
+Only in /home/olikar: zprofile
+Only in /home/olikar: zshenv
+diff -y /etc/skel/.zshrc /home/olikar/.zshrc
+#								#
+# .zshrc is sourced in interactive shells.			# .zshrc is sourced in interactive shells.
+# It should contain commands to set up aliases,			# It should contain commands to set up aliases,
+# functions, options, key bindings, etc.			# functions, options, key bindings, etc.
+#								#
+
+autoload -U compinit						autoload -U compinit
+compinit							compinit
+
+#allow tab completion in the middle of a word			#allow tab completion in the middle of a word
+setopt COMPLETE_IN_WORD						setopt COMPLETE_IN_WORD
+
+## keep background processes at full speed			## keep background processes at full speed
+#setopt NOBGNICE						#setopt NOBGNICE
+## restart running processes on exit				## restart running processes on exit
+#setopt HUP							#setopt HUP
+
+## history							## history
+#setopt APPEND_HISTORY						#setopt APPEND_HISTORY
+## for sharing history between zsh processes			## for sharing history between zsh processes
+#setopt INC_APPEND_HISTORY					#setopt INC_APPEND_HISTORY
+#setopt SHARE_HISTORY						#setopt SHARE_HISTORY
+
+## never ever beep ever						## never ever beep ever
+#setopt NO_BEEP							#setopt NO_BEEP
+
+## automatically decide when to page a list of completions	## automatically decide when to page a list of completions
+#LISTMAX=0							#LISTMAX=0
+
+## disable mail checking					## disable mail checking
+#MAILCHECK=0							#MAILCHECK=0
+
+# autoload -U colors						# autoload -U colors
+#colors								#colors
+Only in /home/olikar: .zshrc~
+Only in /home/olikar: zshrc
